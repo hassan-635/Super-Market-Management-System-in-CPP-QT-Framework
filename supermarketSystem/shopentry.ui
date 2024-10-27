@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ShopEntry</class>
+ <widget class="QDialog" name="ShopEntry">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>357</width>
+    <height>408</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Data Entry Form</string>
+  </property>
+  <widget class="QLabel" name="labelAppName">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>10</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #4382EC;
+	font: 900 11pt &quot;Roboto&quot;;
+	border-radius: 10px;
+	text-align: center;
+	background-color: #E2EEFF;
+}
+	</string>
+   </property>
+   <property name="text">
+    <string>  Super Market Management System  </string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frameText">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>331</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame 
+{
+background-color: #E2EEFF;
+border-radius: 10px;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLineEdit" name="shopID">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>291</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+background-color : #BBD6FD;
+color: #4382EC;
+border: 2px solid #4382EC;
+border-radius: 10px;
+font-weight: bold;
+}
+
+QLineEdit:hover
+{
+background-color : #BBD6FD;
+border: 3px solid #4382EC;
+border-radius: 10px;
+font-weight: bolder;
+}
+
+QLineEdit:focus
+{
+background-color : #BBD6FD;
+border: 3px solid #4382EC;
+border-radius: 10px;
+color: #4382EC;
+font-weight: italic;
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string>Enter Shop ID</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="shopName">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>291</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+background-color : #BBD6FD;
+color: #4382EC;
+border: 2px solid #4382EC;
+border-radius: 10px;
+font-weight: bold;
+}
+
+QLineEdit:hover
+{
+background-color : #BBD6FD;
+border: 3px solid #4382EC;
+border-radius: 10px;
+font-weight: bolder;
+}
+
+QLineEdit:focus
+{
+background-color : #BBD6FD;
+border: 3px solid #4382EC;
+border-radius: 10px;
+color: #4382EC;
+font-weight: italic;
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string>Enter Shop Name</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="empName">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>291</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+background-color : #BBD6FD;
+color: #4382EC;
+border: 2px solid #4382EC;
+border-radius: 10px;
+font-weight: bold;
+}
+
+QLineEdit:hover
+{
+background-color : #BBD6FD;
+border: 3px solid #4382EC;
+border-radius: 10px;
+font-weight: bolder;
+}
+
+QLineEdit:focus
+{
+background-color : #BBD6FD;
+border: 3px solid #4382EC;
+border-radius: 10px;
+color: #4382EC;
+font-weight: italic;
+}</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Normal</enum>
+    </property>
+    <property name="placeholderText">
+     <string>Enter Employee Name</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="empPassword">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>291</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+background-color : #BBD6FD;
+color: #4382EC;
+border: 2px solid #4382EC;
+border-radius: 10px;
+font-weight: bold;
+}
+
+QLineEdit:hover
+{
+background-color : #BBD6FD;
+border: 3px solid #4382EC;
+border-radius: 10px;
+font-weight: bolder;
+}
+
+QLineEdit:focus
+{
+background-color : #BBD6FD;
+border: 3px solid #4382EC;
+border-radius: 10px;
+color: #4382EC;
+font-weight: italic;
+}</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>Enter Employee Password</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="empEmail">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>170</y>
+      <width>291</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+background-color : #BBD6FD;
+color: #4382EC;
+border: 2px solid #4382EC;
+border-radius: 10px;
+font-weight: bold;
+}
+
+QLineEdit:hover
+{
+background-color : #BBD6FD;
+border: 3px solid #4382EC;
+border-radius: 10px;
+font-weight: bolder;
+}
+
+QLineEdit:focus
+{
+background-color : #BBD6FD;
+border: 3px solid #4382EC;
+border-radius: 10px;
+color: #4382EC;
+font-weight: italic;
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string>Enter Employee Email</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonClear">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>250</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+image:url(&quot;:/images/Clear.svg&quot;);
+background-color: #E2EEFF;
+color: white;
+border-radius: 10px;
+text-align: center;
+}
+
+QPushButton:hover {
+	color: #4382EC;
+	font-weight: bold;
+	background-color: #E2EEFF;
+	border-radius: 10px;
+	border: 2px solid #4382EC;
+}
+
+QPushButton:pressed {
+color: #E2EEFF;
+border: 4px solid #BBD6FD;
+}
+	</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonSave">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>260</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+image:url(&quot;:/images/Save.svg&quot;);
+background-color: #E2EEFF;
+color: white;
+border-radius: 10px;
+text-align: center;
+}
+
+QPushButton:hover {
+	color: #4382EC;
+	font-weight: bold;
+	background-color: #E2EEFF;
+	border-radius: 10px;
+	border: 2px solid #4382EC;
+	padding: 2px;
+}
+
+QPushButton:pressed {
+color: #E2EEFF;
+border: 4px solid #BBD6FD;
+}
+	</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="empSalary">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>210</y>
+      <width>291</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+background-color : #BBD6FD;
+color: #4382EC;
+border: 2px solid #4382EC;
+border-radius: 10px;
+font-weight: bold;
+}
+
+QLineEdit:hover
+{
+background-color : #BBD6FD;
+border: 3px solid #4382EC;
+border-radius: 10px;
+font-weight: bolder;
+}
+
+QLineEdit:focus
+{
+background-color : #BBD6FD;
+border: 3px solid #4382EC;
+border-radius: 10px;
+color: #4382EC;
+font-weight: italic;
+}</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Normal</enum>
+    </property>
+    <property name="placeholderText">
+     <string>Enter Employee Salary</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="empHireDate">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>260</y>
+      <width>110</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QDateEdit#empHireDate
+{
+background-color : #BBD6FD;
+color: #4382EC;
+border: 2px solid #4382EC;
+border-radius: 10px;
+font-weight: bold; 
+}
+
+QDateEdit#empHireDate:hover
+{
+background-color : #BBD6FD;
+border: 3px solid #4382EC;
+border-radius: 10px;
+font-weight: bolder;
+}
+
+QDateEdit#empHireDate:focus
+{
+background-color : #BBD6FD;
+border: 3px solid #4382EC;
+border-radius: 10px;
+color: #4382EC;
+font-weight: italic;
+}</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="buttonBack">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+image:url(&quot;:/images/Back.svg&quot;);
+background-color: #E2EEFF;
+color: white;
+border-radius: 10px;
+text-align: center;
+}
+
+QPushButton:hover {
+	color: #4382EC;
+	font-weight: bold;
+	background-color: #E2EEFF;
+	border-radius: 10px;
+	border: 2px solid #4382EC;
+}
+
+QPushButton:pressed {
+color: #E2EEFF;
+border: 4px solid #BBD6FD;
+}
+	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>50</y>
+     <width>65</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#label{color: #BBD6FD;
+}</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

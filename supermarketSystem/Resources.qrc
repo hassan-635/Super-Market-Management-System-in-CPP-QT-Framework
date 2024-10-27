@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>barcode.png</file>
+        <file>Back.svg</file>
+        <file>Icon.svg</file>
+        <file>LogOut.svg</file>
+        <file>remove.svg</file>
+        <file>Insert.svg</file>
+        <file>Security.svg</file>
+        <file>Clear.svg</file>
+        <file>Save.svg</file>
+        <file>Delete.svg</file>
+        <file>Update.svg</file>
+    </qresource>
+</RCC>

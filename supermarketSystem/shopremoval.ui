@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ShopRemoval</class>
+ <widget class="QDialog" name="ShopRemoval">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>365</width>
+    <height>264</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>365</width>
+    <height>264</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>365</width>
+    <height>264</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QFrame" name="frameText">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>331</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame 
+{
+background-color: #E2EEFF;
+border-radius: 10px;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLineEdit" name="shopID">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>291</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+background-color : #BBD6FD;
+color: #4382EC;
+border: 2px solid #4382EC;
+border-radius: 10px;
+font-weight: bold;
+}
+
+QLineEdit:hover
+{
+background-color : #BBD6FD;
+border: 3px solid #4382EC;
+border-radius: 10px;
+font-weight: bolder;
+}
+
+QLineEdit:focus
+{
+background-color : #BBD6FD;
+border: 3px solid #4382EC;
+border-radius: 10px;
+color: #4382EC;
+font-weight: italic;
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string>Enter Shop ID</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonClear">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+image:url(&quot;:/images/Clear.svg&quot;);
+background-color: #E2EEFF;
+color: white;
+border-radius: 10px;
+text-align: center;
+}
+
+QPushButton:hover {
+	color: #4382EC;
+	font-weight: bold;
+	background-color: #E2EEFF;
+	border-radius: 10px;
+	border: 2px solid #4382EC;
+}
+
+QPushButton:pressed {
+color: #E2EEFF;
+border: 4px solid #BBD6FD;
+}
+	</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonDelete">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>100</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+image:url(&quot;:/images/Delete.svg&quot;);
+background-color: #E2EEFF;
+color: white;
+border-radius: 10px;
+text-align: center;
+}
+
+QPushButton:hover {
+	color: #4382EC;
+	font-weight: bold;
+	background-color: #E2EEFF;
+	border-radius: 10px;
+	border: 2px solid #4382EC;
+}
+
+QPushButton:pressed {
+color: #E2EEFF;
+border: 4px solid #BBD6FD;
+}
+	</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="adminUname">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>291</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+background-color : #BBD6FD;
+color: #4382EC;
+border: 2px solid #4382EC;
+border-radius: 10px;
+font-weight: bold;
+}
+
+QLineEdit:hover
+{
+background-color : #BBD6FD;
+border: 3px solid #4382EC;
+border-radius: 10px;
+font-weight: bolder;
+}
+
+QLineEdit:focus
+{
+background-color : #BBD6FD;
+border: 3px solid #4382EC;
+border-radius: 10px;
+color: #4382EC;
+font-weight: italic;
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string> Enter Admin Username</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="empUsername">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>291</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit
+{
+background-color : #BBD6FD;
+color: #4382EC;
+border: 2px solid #4382EC;
+border-radius: 10px;
+font-weight: bold;
+}
+
+QLineEdit:hover
+{
+background-color : #BBD6FD;
+border: 3px solid #4382EC;
+border-radius: 10px;
+font-weight: bolder;
+}
+
+QLineEdit:focus
+{
+background-color : #BBD6FD;
+border: 3px solid #4382EC;
+border-radius: 10px;
+color: #4382EC;
+font-weight: italic;
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string> Enter Employee Username</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="buttonBack">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+image:url(&quot;:/images/Back.svg&quot;);
+background-color: #E2EEFF;
+color: white;
+border-radius: 10px;
+text-align: center;
+}
+
+QPushButton:hover {
+	color: #4382EC;
+	font-weight: bold;
+	background-color: #E2EEFF;
+	border-radius: 10px;
+	border: 2px solid #4382EC;
+}
+
+QPushButton:pressed {
+color: #E2EEFF;
+border: 4px solid #BBD6FD;
+}
+	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelAppName">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>10</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	color: #4382EC;
+	font: 900 11pt &quot;Roboto&quot;;
+	border-radius: 10px;
+	text-align: center;
+	background-color: #E2EEFF;
+}
+	</string>
+   </property>
+   <property name="text">
+    <string>  Super Market Management System  </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>65</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#label
+{
+color: #BBD6FD;
+}</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

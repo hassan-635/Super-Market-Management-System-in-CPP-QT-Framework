@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EmployeeScreen</class>
+ <widget class="QDialog" name="EmployeeScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>760</width>
+    <height>635</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>760</width>
+    <height>635</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>760</width>
+    <height>635</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Employee Panel</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>10</y>
+     <width>371</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QLabel" name="labelAppName_2">
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	color: #4382EC;
+	font: 900 11pt &quot;Roboto&quot;;
+	border-radius: 10px;
+	text-align: center;
+	background-color: #E2EEFF;
+}
+	</string>
+      </property>
+      <property name="text">
+       <string>             Super Market Management System </string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="buttonBack">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+image:url(&quot;:/images/Back.svg&quot;);
+background-color: #E2EEFF;
+color: white;
+border-radius: 10px;
+text-align: center;
+}
+
+QPushButton:hover {
+	color: #4382EC;
+	font-weight: bold;
+	background-color: #E2EEFF;
+	border-radius: 10px;
+	border: 2px solid #4382EC;
+}
+
+QPushButton:pressed {
+color: #E2EEFF;
+border: 4px solid #BBD6FD;
+}
+	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="LogOut">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>20</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+image:url(&quot;:/images/LogOut.svg&quot;);
+background-color: #E2EEFF;
+color: white;
+border-radius: 10px;
+text-align: center;
+}
+
+QPushButton:hover {
+	color: #4382EC;
+	font-weight: bold;
+	background-color: #E2EEFF;
+	border-radius: 10px;
+	border: 2px solid #4382EC;
+}
+
+QPushButton:pressed {
+color: #E2EEFF;
+border: 4px solid #BBD6FD;
+}
+	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>570</y>
+     <width>221</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame {
+border: 0;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="buttonAddData_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+image:url(&quot;:/images/Insert.svg&quot;);
+background-color: #E2EEFF;
+color: white;
+border-radius: 10px;
+text-align: center;
+}
+
+QPushButton:hover {
+	color: #4382EC;
+	font-weight: bold;
+	background-color: #E2EEFF;
+	border-radius: 10px;
+	border: 2px solid #4382EC;
+}
+
+QPushButton:pressed {
+color: #E2EEFF;
+border: 4px solid #BBD6FD;
+}
+	</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonRemoveData_2">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>0</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+image:url(&quot;:/images/remove.svg&quot;);
+background-color: #E2EEFF;
+color: white;
+border-radius: 10px;
+text-align: center;
+}
+
+QPushButton:hover {
+	color: #4382EC;
+	font-weight: bold;
+	background-color: #E2EEFF;
+	border-radius: 10px;
+	border: 2px solid #4382EC;
+}
+
+QPushButton:pressed {
+color: #E2EEFF;
+border: 4px solid #BBD6FD;
+}
+	</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonUpdateData">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>0</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+image:url(&quot;:/images/Update.svg&quot;);
+background-color: #E2EEFF;
+color: white;
+border-radius: 10px;
+text-align: center;
+}
+
+QPushButton:hover {
+	color: #4382EC;
+	font-weight: bold;
+	background-color: #E2EEFF;
+	border-radius: 10px;
+	border: 2px solid #4382EC;
+}
+
+QPushButton:pressed {
+color: #E2EEFF;
+border: 4px solid #BBD6FD;
+}
+	</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QTableView" name="tableViewItems">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>90</y>
+     <width>671</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableView {
+color: black;
+background-color: #E2EEFF;
+padding: 5px;
+}
+
+QTableView QHeaderView {
+    background-color: #E2EEFF;
+	color: #4382EC;
+	font: 900 11pt &quot;Roboto&quot;;
+	font-weight: bold;
+}
+
+QTableView QHeaderView::section {
+	border: 2px solid #4382EC;
+	border-radius: 5px;
+    background-color: #E2EEFF;
+	color: #4382EC;
+	font: 500 11pt &quot;Roboto&quot;;
+	font-weight: bold;
+}
+
+QTableView QHeaderView::section:checked {
+    background-color: #BBD6FD;
+    color: #4382EC;
+    border-radius: 10px;
+	font: 900 11pt &quot;Roboto&quot;;
+	font-weight: bold;
+}
+
+QScrollBar {
+    background-color: #4382EC;
+    border-radius: 10px;
+    margin-right: 5px;
+	margin-left: 5px;
+}
+
+QTableView::item {
+    border-radius: 10px;
+	border: 1px solid  #4382EC;
+}
+
+QTableView::item:selected {
+    background-color: #4382EC;
+    color: white;
+	font-weight: bold;
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>70</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(187, 214, 253);</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
